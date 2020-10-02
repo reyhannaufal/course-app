@@ -2,6 +2,9 @@ import 'package:edu_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class SidebarButton extends StatelessWidget {
+  final Function triggerAnimation;
+
+  SidebarButton({Key key, this.triggerAnimation}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
